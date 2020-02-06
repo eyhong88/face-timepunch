@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Face Time Punch</string>
+    <string name="action_settings">Settings</string>
+    <string name="register">REGISTER</string>
+    <string name="start_shift">Start Shift</string>
+    <string name="end_shift">End Shift</string>
+    <string name="start_meal">Start Meal</string>
+    <string name="end_meal">End Meal</string>
+    <string name="unregistered">You could not be identified in the system, please register.</string>
+    <string name="registered">Thank you %1$s %2$s. Your punch at %3$s has been accepted.</string>
+    <string name="partner_nbr">Partner Number</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="photo_required">Photo Identification (required)</string>
+    <string name="login">LOGIN</string>
+    <string name="greetings">Hello, %1$s!</string>
+</resources>

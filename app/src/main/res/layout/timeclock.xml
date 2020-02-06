@@ -1,0 +1,149 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.sbux.wfm.face.punch.activity.MainActivity" android:id="@+id/timeclock">
+
+    <Button
+        android:id="@+id/startShift"
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="132dp"
+        android:background="#0da352"
+        android:text="@string/start_shift"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/startMeal"
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/endShift"
+        android:layout_marginTop="215dp"
+        android:background="#545454"
+        android:text="@string/start_meal"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/endMeal"
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/startShift"
+        android:layout_marginBottom="250dp"
+        android:background="#545454"
+        android:text="@string/end_meal"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/endShift"
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/startShift"
+        android:layout_marginBottom="170dp"
+        android:background="#545454"
+        android:text="@string/end_shift"
+        android:textColor="@android:color/background_light" />
+
+    <TextClock
+        android:id="@+id/clockTime"
+        android:layout_width="121dp"
+        android:layout_height="34dp"
+        android:layout_alignTop="@+id/clockDate"
+        android:layout_centerHorizontal="true"
+        android:format12Hour="hh:mm:ss a"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:timeZone="America/Los_Angeles" />
+
+    <TextView
+        android:id="@+id/clockDate"
+        android:layout_width="139dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/endShift"
+        android:layout_marginTop="96dp"
+        android:textColor="@android:color/background_dark"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/sbuxLogo"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/userNameText"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sbuxLogo"
+        android:layout_toStartOf="@+id/sbuxLogo"
+        android:textColor="@android:color/black" />
+
+    <RelativeLayout
+        android:id="@+id/timeCardLayout"
+        android:layout_width="219dp"
+        android:layout_height="272dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/startShift"
+        android:layout_marginEnd="11dp">
+
+        <TableLayout
+            android:id="@+id/timeCardTableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/timeCardText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Time Card"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="Punch Type"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="87dp"
+                    android:layout_height="wrap_content"
+                    android:text="Actual"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
