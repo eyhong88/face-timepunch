@@ -6,7 +6,7 @@ Azure's internal algorithms are used to compare newly captured images with the f
 
 1. Register a new Partner.
 2. Login to be identified.
-3a. On success, you will be able to punch against your time card.
-3b. On failure, you will be prompted to register again.
+3. On success, you will be able to punch against your time card.
+3. On failure, you will be prompted to register again.
 
 This is a Proof-Of-Concept application.
